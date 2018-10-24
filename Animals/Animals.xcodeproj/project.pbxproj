@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57AFF87204930A6527902F0A /* Pods_AnimalsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9949CE8C1C30C49A78CF5E82 /* Pods_AnimalsTests.framework */; };
+		66C6417E9BDAF98F9DDCFC5D /* Pods_Animals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EB2A512104F66BF18D5736 /* Pods_Animals.framework */; };
 		9F7AF99521800D5700E93D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AF99421800D5700E93D1B /* AppDelegate.swift */; };
 		9F7AF99721800D5700E93D1B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AF99621800D5700E93D1B /* FirstViewController.swift */; };
 		9F7AF99921800D5700E93D1B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AF99821800D5700E93D1B /* SecondViewController.swift */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D894B79DEA91E59C92BAF31 /* Pods-Animals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Animals/Pods-Animals.debug.xcconfig"; sourceTree = "<group>"; };
+		3B3F53BB5D411FA4A8E65440 /* Pods-Animals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animals.release.xcconfig"; path = "Pods/Target Support Files/Pods-Animals/Pods-Animals.release.xcconfig"; sourceTree = "<group>"; };
+		88EB2A512104F66BF18D5736 /* Pods_Animals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9949CE8C1C30C49A78CF5E82 /* Pods_AnimalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7AF99121800D5700E93D1B /* Animals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7AF99421800D5700E93D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F7AF99621800D5700E93D1B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		9F7AF9A721800D5900E93D1B /* AnimalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7AF9AB21800D5900E93D1B /* AnimalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTests.swift; sourceTree = "<group>"; };
 		9F7AF9AD21800D5900E93D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2E80BD7F86AE97CD061F861 /* Pods-AnimalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C6417E9BDAF98F9DDCFC5D /* Pods_Animals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AFF87204930A6527902F0A /* Pods_AnimalsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		559BA6837E43032D9392BCEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88EB2A512104F66BF18D5736 /* Pods_Animals.framework */,
+				9949CE8C1C30C49A78CF5E82 /* Pods_AnimalsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D7A0CE668992AB8FAD1F636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D894B79DEA91E59C92BAF31 /* Pods-Animals.debug.xcconfig */,
+				3B3F53BB5D411FA4A8E65440 /* Pods-Animals.release.xcconfig */,
+				F2E80BD7F86AE97CD061F861 /* Pods-AnimalsTests.debug.xcconfig */,
+				D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9F7AF98821800D5700E93D1B = {
 			isa = PBXGroup;
 			children = (
 				9F7AF99321800D5700E93D1B /* Animals */,
 				9F7AF9AA21800D5900E93D1B /* AnimalsTests */,
 				9F7AF99221800D5700E93D1B /* Products */,
+				6D7A0CE668992AB8FAD1F636 /* Pods */,
+				559BA6837E43032D9392BCEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F7AF9B021800D5900E93D1B /* Build configuration list for PBXNativeTarget "Animals" */;
 			buildPhases = (
+				05724E97372B51D5025529D2 /* [CP] Check Pods Manifest.lock */,
 				9F7AF98D21800D5700E93D1B /* Sources */,
 				9F7AF98E21800D5700E93D1B /* Frameworks */,
 				9F7AF98F21800D5700E93D1B /* Resources */,
@@ -123,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F7AF9B321800D5900E93D1B /* Build configuration list for PBXNativeTarget "AnimalsTests" */;
 			buildPhases = (
+				0E506BA705A0810B2F9B378C /* [CP] Check Pods Manifest.lock */,
 				9F7AF9A321800D5900E93D1B /* Sources */,
 				9F7AF9A421800D5900E93D1B /* Frameworks */,
 				9F7AF9A521800D5900E93D1B /* Resources */,
@@ -194,6 +228,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05724E97372B51D5025529D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Animals-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E506BA705A0810B2F9B378C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimalsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F7AF98D21800D5700E93D1B /* Sources */ = {
@@ -360,15 +433,13 @@
 		};
 		9F7AF9B121800D5900E93D1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D894B79DEA91E59C92BAF31 /* Pods-Animals.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = Animals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myApps.Animals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -378,15 +449,13 @@
 		};
 		9F7AF9B221800D5900E93D1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B3F53BB5D411FA4A8E65440 /* Pods-Animals.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = Animals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myApps.Animals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -396,17 +465,14 @@
 		};
 		9F7AF9B421800D5900E93D1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E80BD7F86AE97CD061F861 /* Pods-AnimalsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = AnimalsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myApps.AnimalsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -417,17 +483,14 @@
 		};
 		9F7AF9B521800D5900E93D1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = AnimalsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myApps.AnimalsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
