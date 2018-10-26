@@ -19,6 +19,9 @@
 		9F8617E52183DD3E005AE0C1 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617E42183DD3E005AE0C1 /* ErrorManager.swift */; };
 		9F8617E72183DD9A005AE0C1 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617E62183DD9A005AE0C1 /* GlobalConstants.swift */; };
 		9F8617E92183E02A005AE0C1 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617E82183E02A005AE0C1 /* Protocols.swift */; };
+		9F8617EF2183E07A005AE0C1 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617EE2183E07A005AE0C1 /* BaseRequest.swift */; };
+		9F8617F12183E17B005AE0C1 /* CatsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F02183E17B005AE0C1 /* CatsRequests.swift */; };
+		9F8617F32183E18A005AE0C1 /* DogsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F22183E18A005AE0C1 /* DogsRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		9F8617E42183DD3E005AE0C1 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		9F8617E62183DD9A005AE0C1 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		9F8617E82183E02A005AE0C1 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		9F8617EE2183E07A005AE0C1 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		9F8617F02183E17B005AE0C1 /* CatsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsRequests.swift; sourceTree = "<group>"; };
+		9F8617F22183E18A005AE0C1 /* DogsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRequests.swift; sourceTree = "<group>"; };
 		D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2E80BD7F86AE97CD061F861 /* Pods-AnimalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				9F8617DF2183DD11005AE0C1 /* Utils */,
+				9F8617EA2183E053005AE0C1 /* Requests */,
 				9FD5E45E21800F1700410F63 /* Models */,
 				9F7AF99421800D5700E93D1B /* AppDelegate.swift */,
 				9F7AF99621800D5700E93D1B /* FirstViewController.swift */,
@@ -171,6 +178,40 @@
 				9F8617E82183E02A005AE0C1 /* Protocols.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9F8617EA2183E053005AE0C1 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617ED2183E06E005AE0C1 /* BaseRequests */,
+				9F8617EC2183E068005AE0C1 /* CatsRequests */,
+				9F8617EB2183E05D005AE0C1 /* DogsRequests */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		9F8617EB2183E05D005AE0C1 /* DogsRequests */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617F22183E18A005AE0C1 /* DogsRequests.swift */,
+			);
+			path = DogsRequests;
+			sourceTree = "<group>";
+		};
+		9F8617EC2183E068005AE0C1 /* CatsRequests */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617F02183E17B005AE0C1 /* CatsRequests.swift */,
+			);
+			path = CatsRequests;
+			sourceTree = "<group>";
+		};
+		9F8617ED2183E06E005AE0C1 /* BaseRequests */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617EE2183E07A005AE0C1 /* BaseRequest.swift */,
+			);
+			path = BaseRequests;
 			sourceTree = "<group>";
 		};
 		9FD5E45E21800F1700410F63 /* Models */ = {
@@ -348,6 +389,9 @@
 				9F7AF99921800D5700E93D1B /* SecondViewController.swift in Sources */,
 				9F7AF99521800D5700E93D1B /* AppDelegate.swift in Sources */,
 				9F8617E72183DD9A005AE0C1 /* GlobalConstants.swift in Sources */,
+				9F8617EF2183E07A005AE0C1 /* BaseRequest.swift in Sources */,
+				9F8617F32183E18A005AE0C1 /* DogsRequests.swift in Sources */,
+				9F8617F12183E17B005AE0C1 /* CatsRequests.swift in Sources */,
 				9F8617E92183E02A005AE0C1 /* Protocols.swift in Sources */,
 				9F8617E52183DD3E005AE0C1 /* ErrorManager.swift in Sources */,
 				9F7AF99721800D5700E93D1B /* FirstViewController.swift in Sources */,
