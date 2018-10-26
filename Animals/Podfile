@@ -7,7 +7,6 @@ target 'Animals' do
 
   # Pods for Animals
   pod 'Alamofire'
-  pod 'Kingfisher'
   pod 'SwiftyJSON'
   pod 'SVProgressHUD'
 
