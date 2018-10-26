@@ -16,6 +16,7 @@
 		9F7AF99E21800D5900E93D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AF99D21800D5900E93D1B /* Assets.xcassets */; };
 		9F7AF9A121800D5900E93D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AF99F21800D5900E93D1B /* LaunchScreen.storyboard */; };
 		9F7AF9AC21800D5900E93D1B /* AnimalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AF9AB21800D5900E93D1B /* AnimalsTests.swift */; };
+		9F8617E52183DD3E005AE0C1 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617E42183DD3E005AE0C1 /* ErrorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9F7AF9A721800D5900E93D1B /* AnimalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7AF9AB21800D5900E93D1B /* AnimalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTests.swift; sourceTree = "<group>"; };
 		9F7AF9AD21800D5900E93D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8617E42183DD3E005AE0C1 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2E80BD7F86AE97CD061F861 /* Pods-AnimalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,8 @@
 		9F7AF99321800D5700E93D1B /* Animals */ = {
 			isa = PBXGroup;
 			children = (
+				9F8617DF2183DD11005AE0C1 /* Utils */,
+				9FD5E45E21800F1700410F63 /* Models */,
 				9F7AF99421800D5700E93D1B /* AppDelegate.swift */,
 				9F7AF99621800D5700E93D1B /* FirstViewController.swift */,
 				9F7AF99821800D5700E93D1B /* SecondViewController.swift */,
@@ -129,6 +133,45 @@
 				9F7AF9AD21800D5900E93D1B /* Info.plist */,
 			);
 			path = AnimalsTests;
+			sourceTree = "<group>";
+		};
+		9F8617DF2183DD11005AE0C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617E32183DD2D005AE0C1 /* Protocol */,
+				9F8617E12183DD1F005AE0C1 /* Constants */,
+				9F8617E02183DD18005AE0C1 /* ErrorManager */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9F8617E02183DD18005AE0C1 /* ErrorManager */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617E42183DD3E005AE0C1 /* ErrorManager.swift */,
+			);
+			path = ErrorManager;
+			sourceTree = "<group>";
+		};
+		9F8617E12183DD1F005AE0C1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9F8617E32183DD2D005AE0C1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9FD5E45E21800F1700410F63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +343,7 @@
 			files = (
 				9F7AF99921800D5700E93D1B /* SecondViewController.swift in Sources */,
 				9F7AF99521800D5700E93D1B /* AppDelegate.swift in Sources */,
+				9F8617E52183DD3E005AE0C1 /* ErrorManager.swift in Sources */,
 				9F7AF99721800D5700E93D1B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +508,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = Animals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myApps.Animals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -480,7 +527,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = Animals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myApps.Animals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -497,7 +547,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = AnimalsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myApps.AnimalsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -515,7 +569,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = AnimalsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myApps.AnimalsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
