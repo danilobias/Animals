@@ -22,6 +22,11 @@
 		9F8617EF2183E07A005AE0C1 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617EE2183E07A005AE0C1 /* BaseRequest.swift */; };
 		9F8617F12183E17B005AE0C1 /* CatsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F02183E17B005AE0C1 /* CatsRequests.swift */; };
 		9F8617F32183E18A005AE0C1 /* DogsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F22183E18A005AE0C1 /* DogsRequests.swift */; };
+		9F8617F92183E453005AE0C1 /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F52183E453005AE0C1 /* Height.swift */; };
+		9F8617FA2183E453005AE0C1 /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F62183E453005AE0C1 /* Breeds.swift */; };
+		9F8617FB2183E453005AE0C1 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F72183E453005AE0C1 /* Weight.swift */; };
+		9F8617FC2183E453005AE0C1 /* AnimalsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F82183E453005AE0C1 /* AnimalsResponse.swift */; };
+		9F8618022183E4B9005AE0C1 /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8618012183E4B9005AE0C1 /* CategoryResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,11 @@
 		9F8617EE2183E07A005AE0C1 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		9F8617F02183E17B005AE0C1 /* CatsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsRequests.swift; sourceTree = "<group>"; };
 		9F8617F22183E18A005AE0C1 /* DogsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRequests.swift; sourceTree = "<group>"; };
+		9F8617F52183E453005AE0C1 /* Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Height.swift; sourceTree = "<group>"; };
+		9F8617F62183E453005AE0C1 /* Breeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
+		9F8617F72183E453005AE0C1 /* Weight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		9F8617F82183E453005AE0C1 /* AnimalsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsResponse.swift; sourceTree = "<group>"; };
+		9F8618012183E4B9005AE0C1 /* CategoryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryResponse.swift; sourceTree = "<group>"; };
 		D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2E80BD7F86AE97CD061F861 /* Pods-AnimalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,9 +224,54 @@
 			path = BaseRequests;
 			sourceTree = "<group>";
 		};
+		9F8617F42183E352005AE0C1 /* AnimalsResponse */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617F82183E453005AE0C1 /* AnimalsResponse.swift */,
+			);
+			path = AnimalsResponse;
+			sourceTree = "<group>";
+		};
+		9F8617FD2183E45A005AE0C1 /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617F62183E453005AE0C1 /* Breeds.swift */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
+		9F8617FE2183E45F005AE0C1 /* Height */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617F52183E453005AE0C1 /* Height.swift */,
+			);
+			path = Height;
+			sourceTree = "<group>";
+		};
+		9F8617FF2183E464005AE0C1 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				9F8617F72183E453005AE0C1 /* Weight.swift */,
+			);
+			path = Weight;
+			sourceTree = "<group>";
+		};
+		9F8618002183E4A8005AE0C1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9F8618012183E4B9005AE0C1 /* CategoryResponse.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		9FD5E45E21800F1700410F63 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9F8617F42183E352005AE0C1 /* AnimalsResponse */,
+				9F8618002183E4A8005AE0C1 /* Category */,
+				9F8617FF2183E464005AE0C1 /* Weight */,
+				9F8617FE2183E45F005AE0C1 /* Height */,
+				9F8617FD2183E45A005AE0C1 /* Breeds */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -388,13 +443,18 @@
 			files = (
 				9F7AF99921800D5700E93D1B /* SecondViewController.swift in Sources */,
 				9F7AF99521800D5700E93D1B /* AppDelegate.swift in Sources */,
+				9F8618022183E4B9005AE0C1 /* CategoryResponse.swift in Sources */,
 				9F8617E72183DD9A005AE0C1 /* GlobalConstants.swift in Sources */,
 				9F8617EF2183E07A005AE0C1 /* BaseRequest.swift in Sources */,
 				9F8617F32183E18A005AE0C1 /* DogsRequests.swift in Sources */,
+				9F8617FA2183E453005AE0C1 /* Breeds.swift in Sources */,
 				9F8617F12183E17B005AE0C1 /* CatsRequests.swift in Sources */,
+				9F8617F92183E453005AE0C1 /* Height.swift in Sources */,
 				9F8617E92183E02A005AE0C1 /* Protocols.swift in Sources */,
 				9F8617E52183DD3E005AE0C1 /* ErrorManager.swift in Sources */,
 				9F7AF99721800D5700E93D1B /* FirstViewController.swift in Sources */,
+				9F8617FC2183E453005AE0C1 /* AnimalsResponse.swift in Sources */,
+				9F8617FB2183E453005AE0C1 /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
