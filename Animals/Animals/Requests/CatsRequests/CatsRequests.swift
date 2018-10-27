@@ -11,8 +11,8 @@ import SwiftyJSON
 
 class CatsRequests: NSObject {
 
-    static func searchImages(withURL url: String, completion: @escaping(AnimalsResponse?, Error?) -> Void) {
-        BaseRequest.get(url) { (result) in
+    static func searchImages(withURL url: String, params: [String: Any]? = nil, completion: @escaping(AnimalsResponse?, Error?) -> Void) {
+        BaseRequest.get(url, params) { (result) in
             if let data = result as? Data {
                 
                 let json: JSON = JSON(data)
