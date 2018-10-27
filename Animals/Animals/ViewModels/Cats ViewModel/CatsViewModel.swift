@@ -21,8 +21,8 @@ class CatsViewModel: CatsViewModelProtocol {
             self.responseDidChange?(self)
         }
     }
-//    var url: String = Constants.APIUrls.get
-    var url: String = ""
+    
+    var url: String = Constants.APIUrls.searchCats
     var responseDidChange: ((CatsViewModelProtocol) -> Void)?
     
     // MARK: - Methods
@@ -42,6 +42,7 @@ class CatsViewModel: CatsViewModelProtocol {
     func getElement(completion: @escaping (Error?) -> Void) {
         
         CatsRequests.searchImages(withURL: url) { (animalsResponse, error) in
+            print("CATS RESPONSE \(animalsResponse) - Error: \(error)")
             if let animals = animalsResponse {
                 self.response = animals
             }

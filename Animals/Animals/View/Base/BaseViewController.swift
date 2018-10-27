@@ -41,3 +41,16 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+extension BaseViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let itemsPerRow: CGFloat = 2
+        let hardCodedPadding: CGFloat = 10
+        let itemWidth: CGFloat = (collectionView.bounds.width / itemsPerRow) - hardCodedPadding
+        let itemHeight: CGFloat = 318.0
+        return CGSize(width: itemWidth, height: itemHeight)
+    }
+}
+

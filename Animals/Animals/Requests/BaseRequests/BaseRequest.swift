@@ -15,7 +15,8 @@ class BaseRequest: NSObject {
     
     static let basicHeaders = [
         "accept-language": "en",
-        "cache-control": "no-cache"
+        "cache-control": "no-cache",
+        "x-api-key": "0dde82cb-9a5b-4161-a264-32b6ea234f33"
     ]
     
     static var manager: SessionManager {
@@ -28,7 +29,7 @@ class BaseRequest: NSObject {
         request(url.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) ?? url, method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: basicHeaders).validate(statusCode: 200..<300).responseJSON { (response) in
 
 //            print("GET: \(response.request?.url?.absoluteString ?? "")")
-//            self.debugResponse(response: response)
+            self.debugResponse(response: response)
 
             switch response.result{
             case .success:

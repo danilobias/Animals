@@ -22,12 +22,13 @@ struct Constants {
     }
     
     struct URLPaths {
-        static let commonPath = "/"
-        static let concatKey = "&"
+        static let commonPath: String = "/"
+        static let concatKey: String = "&"
     }
     
     struct CommonMethods {
-        static let search = "/search"
+        static let images: String = "images"
+        static let search: String = "search"
     }
     
     struct CatsMethods {
@@ -39,9 +40,8 @@ struct Constants {
     
     struct APIUrls {
         
-//        static let getAllCats = Constants.APIPreffix.urlPreffix + GenresMethods.getAllMethod + Constants.URLPaths.concatKey + Constants.SortMethods.orderByCreatedAtAsc + Constants.URLPaths.concatKey + Constants.APIKeys.apiKey
-//
-//        static let getAllDogs = Constants.APIPreffix.urlPreffix + GenresMethods.getMovieByGenreMethod + Constants.SortMethods.orderByCreatedAtAsc + Constants.URLPaths.concatKey + Constants.APIKeys.apiKey
+        static let searchCats = Constants.APIPreffix.urlCatPreffix + CommonMethods.images + URLPaths.commonPath + CommonMethods.search
+        static let searchDogs = Constants.APIPreffix.urlDogPreffix + CommonMethods.search
         
     }
 }
