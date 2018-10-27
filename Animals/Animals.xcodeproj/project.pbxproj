@@ -29,6 +29,7 @@
 		9F8618022183E4B9005AE0C1 /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8618012183E4B9005AE0C1 /* CategoryResponse.swift */; };
 		9F8618062183E6FF005AE0C1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8618052183E6FF005AE0C1 /* BaseViewController.swift */; };
 		9F8618092183E737005AE0C1 /* CatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8618082183E737005AE0C1 /* CatsViewController.swift */; };
+		9F86180D2183E7A3005AE0C1 /* CatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86180C2183E7A3005AE0C1 /* CatsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		9F8618012183E4B9005AE0C1 /* CategoryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryResponse.swift; sourceTree = "<group>"; };
 		9F8618052183E6FF005AE0C1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9F8618082183E737005AE0C1 /* CatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewController.swift; sourceTree = "<group>"; };
+		9F86180C2183E7A3005AE0C1 /* CatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewModel.swift; sourceTree = "<group>"; };
 		D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2E80BD7F86AE97CD061F861 /* Pods-AnimalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 				9F8617EA2183E053005AE0C1 /* Requests */,
 				9FD5E45E21800F1700410F63 /* Models */,
 				9F8618032183E6D5005AE0C1 /* View */,
+				9F86180A2183E75E005AE0C1 /* ViewModels */,
 				9F7AF99421800D5700E93D1B /* AppDelegate.swift */,
 				9F7AF99621800D5700E93D1B /* FirstViewController.swift */,
 				9F7AF99821800D5700E93D1B /* SecondViewController.swift */,
@@ -292,6 +295,22 @@
 				9F8618082183E737005AE0C1 /* CatsViewController.swift */,
 			);
 			path = CatsViewController;
+			sourceTree = "<group>";
+		};
+		9F86180A2183E75E005AE0C1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9F86180B2183E76E005AE0C1 /* Cats ViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9F86180B2183E76E005AE0C1 /* Cats ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F86180C2183E7A3005AE0C1 /* CatsViewModel.swift */,
+			);
+			path = "Cats ViewModel";
 			sourceTree = "<group>";
 		};
 		9FD5E45E21800F1700410F63 /* Models */ = {
@@ -481,6 +500,7 @@
 				9F8617FA2183E453005AE0C1 /* Breeds.swift in Sources */,
 				9F8617F12183E17B005AE0C1 /* CatsRequests.swift in Sources */,
 				9F8617F92183E453005AE0C1 /* Height.swift in Sources */,
+				9F86180D2183E7A3005AE0C1 /* CatsViewModel.swift in Sources */,
 				9F8617E92183E02A005AE0C1 /* Protocols.swift in Sources */,
 				9F8617E52183DD3E005AE0C1 /* ErrorManager.swift in Sources */,
 				9F7AF99721800D5700E93D1B /* FirstViewController.swift in Sources */,

@@ -11,13 +11,18 @@ import SwiftyJSON
 
 class CatsRequests: NSObject {
 
-    static func searchImages(withURL url: String, params: [String: Any]? = nil, completion: @escaping(AnimalsResponse?, Error?) -> Void) {
+    static func searchImages(withURL url: String, params: [String: Any]? = nil, completion: @escaping([AnimalsResponse]?, Error?) -> Void) {
         BaseRequest.get(url, params) { (result) in
             if let data = result as? Data {
                 
                 let json: JSON = JSON(data)
-                let movieDetail: AnimalsResponse = AnimalsResponse(json: json)
-                completion(movieDetail, nil)
+                var searchArray: [AnimalsResponse] = []// AnimalsResponse(json: json)
+
+                if let items = json.array {
+                    searchArray = items.map { AnimalsResponse(json: $0) }
+                }
+                
+                completion(searchArray, nil)
                 
             }else if let error = result as? Error {
                 completion(nil, error)
