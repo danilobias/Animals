@@ -26,10 +26,10 @@ class BaseRequest: NSObject {
     }
     
     static func get(_ url: String, _ parameters: [String:Any]? = nil,  completion: @escaping(Any?) -> Void) {
-        request(url.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) ?? url, method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: basicHeaders).validate(statusCode: 200..<300).responseJSON { (response) in
+        request(url.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) ?? url, method: .get, parameters: parameters, encoding: URLEncoding.queryString, headers: basicHeaders).validate(statusCode: 200..<300).responseJSON { (response) in
 
 //            print("GET: \(response.request?.url?.absoluteString ?? "")")
-            self.debugResponse(response: response)
+//            self.debugResponse(response: response)
 
             switch response.result{
             case .success:

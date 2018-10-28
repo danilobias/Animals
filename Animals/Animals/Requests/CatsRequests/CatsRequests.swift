@@ -16,7 +16,7 @@ class CatsRequests: NSObject {
             if let data = result as? Data {
                 
                 let json: JSON = JSON(data)
-                var searchArray: [AnimalsResponse] = []// AnimalsResponse(json: json)
+                var searchArray: [AnimalsResponse] = []
 
                 if let items = json.array {
                     searchArray = items.map { AnimalsResponse(json: $0) }

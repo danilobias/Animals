@@ -49,7 +49,7 @@ extension BaseViewController: UICollectionViewDelegateFlowLayout {
         let itemsPerRow: CGFloat = 2
         let hardCodedPadding: CGFloat = 10
         let itemWidth: CGFloat = (collectionView.bounds.width / itemsPerRow) - hardCodedPadding
-        let itemHeight: CGFloat = 318.0
+        let itemHeight: CGFloat = itemWidth
         return CGSize(width: itemWidth, height: itemHeight)
     }
 }

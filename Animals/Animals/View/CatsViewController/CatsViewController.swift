@@ -72,15 +72,7 @@ extension CatsViewController: UICollectionViewDataSource {
         cell.configCellWith(cat: cat)
         
         return cell
-    }
-    
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//
-//        if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeaderIdentifier", for: indexPath) as? SectionHeader {
-//            return sectionHeader
-//        }
-//        return UICollectionReusableView()
-//    }
+    }    
 }
 
 

@@ -24,6 +24,7 @@ struct Constants {
     struct URLPaths {
         static let commonPath: String = "/"
         static let concatKey: String = "&"
+        static let question: String = "?"
     }
     
     struct CommonMethods {
@@ -40,8 +41,11 @@ struct Constants {
     
     struct APIUrls {
         
-        static let searchCats = Constants.APIPreffix.urlCatPreffix + CommonMethods.images + URLPaths.commonPath + CommonMethods.search
-        static let searchDogs = Constants.APIPreffix.urlDogPreffix + CommonMethods.search
-        
+        static let searchCats: String = Constants.APIPreffix.urlCatPreffix + CommonMethods.images + URLPaths.commonPath + CommonMethods.search + URLPaths.question
+        static let searchDogs: String = Constants.APIPreffix.urlDogPreffix + CommonMethods.search
+    }
+    
+    struct Placeholders {
+        static let catImagePlaceholder: String = "ic_cat_large"
     }
 }

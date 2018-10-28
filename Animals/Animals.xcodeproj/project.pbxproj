@@ -20,7 +20,6 @@
 		9F8617E92183E02A005AE0C1 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617E82183E02A005AE0C1 /* Protocols.swift */; };
 		9F8617EF2183E07A005AE0C1 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617EE2183E07A005AE0C1 /* BaseRequest.swift */; };
 		9F8617F12183E17B005AE0C1 /* CatsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F02183E17B005AE0C1 /* CatsRequests.swift */; };
-		9F8617F32183E18A005AE0C1 /* DogsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F22183E18A005AE0C1 /* DogsRequests.swift */; };
 		9F8617F92183E453005AE0C1 /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F52183E453005AE0C1 /* Height.swift */; };
 		9F8617FA2183E453005AE0C1 /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F62183E453005AE0C1 /* Breeds.swift */; };
 		9F8617FB2183E453005AE0C1 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8617F72183E453005AE0C1 /* Weight.swift */; };
@@ -30,6 +29,7 @@
 		9F8618092183E737005AE0C1 /* CatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8618082183E737005AE0C1 /* CatsViewController.swift */; };
 		9F86180D2183E7A3005AE0C1 /* CatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86180C2183E7A3005AE0C1 /* CatsViewModel.swift */; };
 		9F8618132183ED18005AE0C1 /* AnimalsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8618122183ED18005AE0C1 /* AnimalsCollectionViewCell.swift */; };
+		9FE0A37F2186447800456ED9 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0A37E2186447800456ED9 /* UIImageView+AlamofireImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,6 @@
 		9F8617E82183E02A005AE0C1 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		9F8617EE2183E07A005AE0C1 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		9F8617F02183E17B005AE0C1 /* CatsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsRequests.swift; sourceTree = "<group>"; };
-		9F8617F22183E18A005AE0C1 /* DogsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRequests.swift; sourceTree = "<group>"; };
 		9F8617F52183E453005AE0C1 /* Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Height.swift; sourceTree = "<group>"; };
 		9F8617F62183E453005AE0C1 /* Breeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
 		9F8617F72183E453005AE0C1 /* Weight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		9F8618082183E737005AE0C1 /* CatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewController.swift; sourceTree = "<group>"; };
 		9F86180C2183E7A3005AE0C1 /* CatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewModel.swift; sourceTree = "<group>"; };
 		9F8618122183ED18005AE0C1 /* AnimalsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FE0A37E2186447800456ED9 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2E80BD7F86AE97CD061F861 /* Pods-AnimalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +166,7 @@
 		9F8617DF2183DD11005AE0C1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9FE0A37D2186443E00456ED9 /* Extensions */,
 				9F8617E32183DD2D005AE0C1 /* Protocol */,
 				9F8617E12183DD1F005AE0C1 /* Constants */,
 				9F8617E02183DD18005AE0C1 /* ErrorManager */,
@@ -202,17 +203,8 @@
 			children = (
 				9F8617ED2183E06E005AE0C1 /* BaseRequests */,
 				9F8617EC2183E068005AE0C1 /* CatsRequests */,
-				9F8617EB2183E05D005AE0C1 /* DogsRequests */,
 			);
 			path = Requests;
-			sourceTree = "<group>";
-		};
-		9F8617EB2183E05D005AE0C1 /* DogsRequests */ = {
-			isa = PBXGroup;
-			children = (
-				9F8617F22183E18A005AE0C1 /* DogsRequests.swift */,
-			);
-			path = DogsRequests;
 			sourceTree = "<group>";
 		};
 		9F8617EC2183E068005AE0C1 /* CatsRequests */ = {
@@ -331,6 +323,22 @@
 				9F8617FD2183E45A005AE0C1 /* Breeds */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9FE0A37D2186443E00456ED9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FE0A3802186449200456ED9 /* UIImageView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FE0A3802186449200456ED9 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				9FE0A37E2186447800456ED9 /* UIImageView+AlamofireImage.swift */,
+			);
+			path = UIImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,12 +485,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Animals/Pods-Animals-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -504,12 +514,12 @@
 				9F8617E72183DD9A005AE0C1 /* GlobalConstants.swift in Sources */,
 				9F8617EF2183E07A005AE0C1 /* BaseRequest.swift in Sources */,
 				9F8618062183E6FF005AE0C1 /* BaseViewController.swift in Sources */,
-				9F8617F32183E18A005AE0C1 /* DogsRequests.swift in Sources */,
 				9F8617FA2183E453005AE0C1 /* Breeds.swift in Sources */,
 				9F8617F12183E17B005AE0C1 /* CatsRequests.swift in Sources */,
 				9F8617F92183E453005AE0C1 /* Height.swift in Sources */,
 				9F86180D2183E7A3005AE0C1 /* CatsViewModel.swift in Sources */,
 				9F8617E92183E02A005AE0C1 /* Protocols.swift in Sources */,
+				9FE0A37F2186447800456ED9 /* UIImageView+AlamofireImage.swift in Sources */,
 				9F8618132183ED18005AE0C1 /* AnimalsCollectionViewCell.swift in Sources */,
 				9F8617E52183DD3E005AE0C1 /* ErrorManager.swift in Sources */,
 				9F8618092183E737005AE0C1 /* CatsViewController.swift in Sources */,
@@ -678,6 +688,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = Animals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -697,6 +708,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UADKHJJ29F;
 				INFOPLIST_FILE = Animals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

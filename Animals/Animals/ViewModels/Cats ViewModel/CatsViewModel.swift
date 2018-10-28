@@ -16,13 +16,15 @@ protocol CatsViewModelProtocol: ListProtocol {
 class CatsViewModel: CatsViewModelProtocol {
 
     // MARK: - Vars
+    var url: String = Constants.APIUrls.searchCats
+    var limit: Int = 25
+    
     var response: [AnimalsResponse]? {
         didSet{
             self.responseDidChange?(self)
         }
     }
     
-    var url: String = Constants.APIUrls.searchCats
     var responseDidChange: ((CatsViewModelProtocol) -> Void)?
     
     // MARK: - Methods
@@ -41,8 +43,10 @@ class CatsViewModel: CatsViewModelProtocol {
     // MARK: - Request
     func getElement(completion: @escaping (Error?) -> Void) {
         
-        CatsRequests.searchImages(withURL: url) { (animalsResponse, error) in
-            print("CATS RESPONSE \(animalsResponse) - Error: \(error)")
+        let params: [String: Any] = ["limit": limit]
+        
+        CatsRequests.searchImages(withURL: url, params: params) { (animalsResponse, error) in
+            
             if let animals = animalsResponse {
                 self.response = animals
             }
