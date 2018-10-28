@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class CatsRequests: NSObject {
+class AnimalsRequests: NSObject {
 
     static func searchImages(withURL url: String, params: [String: Any]? = nil, completion: @escaping([AnimalsResponse]?, Error?) -> Void) {
         BaseRequest.get(url, params) { (result) in

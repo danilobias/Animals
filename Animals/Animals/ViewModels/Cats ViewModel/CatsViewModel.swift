@@ -45,7 +45,7 @@ class CatsViewModel: CatsViewModelProtocol {
         
         let params: [String: Any] = ["limit": limit]
         
-        CatsRequests.searchImages(withURL: url, params: params) { (animalsResponse, error) in
+        AnimalsRequests.searchImages(withURL: url, params: params) { (animalsResponse, error) in
             
             if let animals = animalsResponse {
                 self.response = animals
