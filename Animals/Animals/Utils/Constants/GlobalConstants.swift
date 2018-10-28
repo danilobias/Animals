@@ -42,7 +42,7 @@ struct Constants {
     struct APIUrls {
         
         static let searchCats: String = Constants.APIPreffix.urlCatPreffix + CommonMethods.images + URLPaths.commonPath + CommonMethods.search + URLPaths.question
-        static let searchDogs: String = Constants.APIPreffix.urlDogPreffix + CommonMethods.search
+        static let searchDogs: String = Constants.APIPreffix.urlDogPreffix + CommonMethods.images + URLPaths.commonPath + CommonMethods.search + URLPaths.question
     }
     
     struct Placeholders {

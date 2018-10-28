@@ -10,7 +10,6 @@
 		57AFF87204930A6527902F0A /* Pods_AnimalsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9949CE8C1C30C49A78CF5E82 /* Pods_AnimalsTests.framework */; };
 		66C6417E9BDAF98F9DDCFC5D /* Pods_Animals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EB2A512104F66BF18D5736 /* Pods_Animals.framework */; };
 		9F7AF99521800D5700E93D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AF99421800D5700E93D1B /* AppDelegate.swift */; };
-		9F7AF99921800D5700E93D1B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AF99821800D5700E93D1B /* SecondViewController.swift */; };
 		9F7AF99C21800D5700E93D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AF99A21800D5700E93D1B /* Main.storyboard */; };
 		9F7AF99E21800D5900E93D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AF99D21800D5900E93D1B /* Assets.xcassets */; };
 		9F7AF9A121800D5900E93D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AF99F21800D5900E93D1B /* LaunchScreen.storyboard */; };
@@ -30,6 +29,8 @@
 		9F86180D2183E7A3005AE0C1 /* CatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86180C2183E7A3005AE0C1 /* CatsViewModel.swift */; };
 		9F8618132183ED18005AE0C1 /* AnimalsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8618122183ED18005AE0C1 /* AnimalsCollectionViewCell.swift */; };
 		9FE0A37F2186447800456ED9 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0A37E2186447800456ED9 /* UIImageView+AlamofireImage.swift */; };
+		9FE0A38321864CF400456ED9 /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0A38221864CF400456ED9 /* DogsViewModel.swift */; };
+		9FE0A38621864DBF00456ED9 /* DogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0A38521864DBF00456ED9 /* DogsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,6 @@
 		9949CE8C1C30C49A78CF5E82 /* Pods_AnimalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7AF99121800D5700E93D1B /* Animals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7AF99421800D5700E93D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F7AF99821800D5700E93D1B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9F7AF99B21800D5700E93D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F7AF99D21800D5900E93D1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F7AF9A021800D5900E93D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +72,8 @@
 		9F86180C2183E7A3005AE0C1 /* CatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewModel.swift; sourceTree = "<group>"; };
 		9F8618122183ED18005AE0C1 /* AnimalsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsCollectionViewCell.swift; sourceTree = "<group>"; };
 		9FE0A37E2186447800456ED9 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
+		9FE0A38221864CF400456ED9 /* DogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
+		9FE0A38521864DBF00456ED9 /* DogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewController.swift; sourceTree = "<group>"; };
 		D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2E80BD7F86AE97CD061F861 /* Pods-AnimalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalsTests/Pods-AnimalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +147,6 @@
 				9F8618032183E6D5005AE0C1 /* View */,
 				9F86180A2183E75E005AE0C1 /* ViewModels */,
 				9F7AF99421800D5700E93D1B /* AppDelegate.swift */,
-				9F7AF99821800D5700E93D1B /* SecondViewController.swift */,
 				9F7AF99A21800D5700E93D1B /* Main.storyboard */,
 				9F7AF99D21800D5900E93D1B /* Assets.xcassets */,
 				9F7AF99F21800D5900E93D1B /* LaunchScreen.storyboard */,
@@ -268,6 +269,7 @@
 			children = (
 				9F8618042183E6E0005AE0C1 /* Base */,
 				9F8618072183E71E005AE0C1 /* CatsViewController */,
+				9FE0A38421864DA400456ED9 /* DogsViewController */,
 				9F8618112183ED18005AE0C1 /* AnimalsCollectionViewCell */,
 			);
 			path = View;
@@ -292,6 +294,7 @@
 		9F86180A2183E75E005AE0C1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9FE0A38121864CE600456ED9 /* Dogs ViewModel */,
 				9F86180B2183E76E005AE0C1 /* Cats ViewModel */,
 			);
 			path = ViewModels;
@@ -339,6 +342,22 @@
 				9FE0A37E2186447800456ED9 /* UIImageView+AlamofireImage.swift */,
 			);
 			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		9FE0A38121864CE600456ED9 /* Dogs ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FE0A38221864CF400456ED9 /* DogsViewModel.swift */,
+			);
+			path = "Dogs ViewModel";
+			sourceTree = "<group>";
+		};
+		9FE0A38421864DA400456ED9 /* DogsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FE0A38521864DBF00456ED9 /* DogsViewController.swift */,
+			);
+			path = DogsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,13 +527,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7AF99921800D5700E93D1B /* SecondViewController.swift in Sources */,
 				9F7AF99521800D5700E93D1B /* AppDelegate.swift in Sources */,
 				9F8618022183E4B9005AE0C1 /* CategoryResponse.swift in Sources */,
 				9F8617E72183DD9A005AE0C1 /* GlobalConstants.swift in Sources */,
 				9F8617EF2183E07A005AE0C1 /* BaseRequest.swift in Sources */,
 				9F8618062183E6FF005AE0C1 /* BaseViewController.swift in Sources */,
 				9F8617FA2183E453005AE0C1 /* Breeds.swift in Sources */,
+				9FE0A38321864CF400456ED9 /* DogsViewModel.swift in Sources */,
 				9F8617F12183E17B005AE0C1 /* AnimalsRequests.swift in Sources */,
 				9F8617F92183E453005AE0C1 /* Height.swift in Sources */,
 				9F86180D2183E7A3005AE0C1 /* CatsViewModel.swift in Sources */,
@@ -522,6 +541,7 @@
 				9FE0A37F2186447800456ED9 /* UIImageView+AlamofireImage.swift in Sources */,
 				9F8618132183ED18005AE0C1 /* AnimalsCollectionViewCell.swift in Sources */,
 				9F8617E52183DD3E005AE0C1 /* ErrorManager.swift in Sources */,
+				9FE0A38621864DBF00456ED9 /* DogsViewController.swift in Sources */,
 				9F8618092183E737005AE0C1 /* CatsViewController.swift in Sources */,
 				9F8617FC2183E453005AE0C1 /* AnimalsResponse.swift in Sources */,
 				9F8617FB2183E453005AE0C1 /* Weight.swift in Sources */,

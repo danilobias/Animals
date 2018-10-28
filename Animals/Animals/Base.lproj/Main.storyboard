@@ -90,13 +90,13 @@
         <!--Dogs-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Animals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="DogsViewController" customModule="Animals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i1y-PS-vK9">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="15" id="rr7-9b-yQm">
                                     <size key="itemSize" width="135" height="135"/>
@@ -141,25 +141,28 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="P1J-zO-4fK"/>
-                                    <outlet property="delegate" destination="9pv-A4-QxB" id="DnO-AZ-D9l"/>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="nkp-gR-xF2"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="2uN-qk-Ahz"/>
                                 </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i1y-PS-vK9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="3cI-v8-Zdg"/>
-                            <constraint firstAttribute="bottom" secondItem="i1y-PS-vK9" secondAttribute="bottom" id="7Rk-1m-TWa"/>
                             <constraint firstItem="i1y-PS-vK9" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="FiL-cN-dOS"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="i1y-PS-vK9" secondAttribute="trailing" id="RH7-xM-R2z"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="i1y-PS-vK9" secondAttribute="bottom" id="rpq-xO-n6n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dogs" image="ic_dog_medium" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="dogsCollectionView" destination="i1y-PS-vK9" id="qLa-on-5PV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
