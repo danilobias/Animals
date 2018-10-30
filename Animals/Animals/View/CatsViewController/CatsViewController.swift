@@ -26,6 +26,7 @@ class CatsViewController: BaseViewController {
     // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Cats"
         // Do any additional setup after loading the view.
         self.catsViewModel = CatsViewModel()
         self.makeGenresRequest()
@@ -45,9 +46,11 @@ class CatsViewController: BaseViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? AnimalDetailsViewController {
+            destination.animal = sender as! AnimalsResponse
+        }
     }
-
+    
     // MARK: - Memory
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -71,7 +74,16 @@ extension CatsViewController: UICollectionViewDataSource {
         cell.configCellWith(cat: cat)
         
         return cell
-    }    
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let dog: AnimalsResponse = self.catsViewModel.getAnimalsResponseBy(index: indexPath.row)
+        if dog.breeds != nil && dog.breeds!.count > 0 {
+            self.performSegue(withIdentifier: "ShowCatDetails", sender: dog)
+        }
+    }
+
 }
 
 

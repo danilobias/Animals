@@ -27,6 +27,7 @@ class DogsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Dogs"
         self.dogsViewModel = DogsViewModel()
         self.makeGenresRequest()
         
@@ -45,7 +46,9 @@ class DogsViewController: BaseViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? AnimalDetailsViewController {
+            destination.animal = sender as! AnimalsResponse
+        }
     }
     
     // MARK: - Memory
@@ -71,5 +74,13 @@ extension DogsViewController: UICollectionViewDataSource {
         cell.configCellWith(cat: dog)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let dog: AnimalsResponse = self.dogsViewModel.getAnimalsResponseBy(index: indexPath.row)
+        if dog.breeds != nil && dog.breeds!.count > 0 {
+            self.performSegue(withIdentifier: "ShowDogDetails", sender: dog)
+        }
     }
 }

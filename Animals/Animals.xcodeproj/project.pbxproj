@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		57AFF87204930A6527902F0A /* Pods_AnimalsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9949CE8C1C30C49A78CF5E82 /* Pods_AnimalsTests.framework */; };
 		66C6417E9BDAF98F9DDCFC5D /* Pods_Animals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EB2A512104F66BF18D5736 /* Pods_Animals.framework */; };
+		9F6EB7E22187E17D00F067E1 /* AnimalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6EB7E12187E17D00F067E1 /* AnimalDetailsViewController.swift */; };
 		9F7AF99521800D5700E93D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AF99421800D5700E93D1B /* AppDelegate.swift */; };
 		9F7AF99C21800D5700E93D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AF99A21800D5700E93D1B /* Main.storyboard */; };
 		9F7AF99E21800D5900E93D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AF99D21800D5900E93D1B /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		3B3F53BB5D411FA4A8E65440 /* Pods-Animals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animals.release.xcconfig"; path = "Pods/Target Support Files/Pods-Animals/Pods-Animals.release.xcconfig"; sourceTree = "<group>"; };
 		88EB2A512104F66BF18D5736 /* Pods_Animals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9949CE8C1C30C49A78CF5E82 /* Pods_AnimalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6EB7E12187E17D00F067E1 /* AnimalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailsViewController.swift; sourceTree = "<group>"; };
 		9F7AF99121800D5700E93D1B /* Animals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7AF99421800D5700E93D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F7AF99B21800D5700E93D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 				D2450522027BDE94AB22B059 /* Pods-AnimalsTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F6EB7E02187E13E00F067E1 /* AnimalDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9F6EB7E12187E17D00F067E1 /* AnimalDetailsViewController.swift */,
+			);
+			path = AnimalDetails;
 			sourceTree = "<group>";
 		};
 		9F7AF98821800D5700E93D1B = {
@@ -270,6 +280,7 @@
 				9F8618042183E6E0005AE0C1 /* Base */,
 				9F8618072183E71E005AE0C1 /* CatsViewController */,
 				9FE0A38421864DA400456ED9 /* DogsViewController */,
+				9F6EB7E02187E13E00F067E1 /* AnimalDetails */,
 				9F8618112183ED18005AE0C1 /* AnimalsCollectionViewCell */,
 			);
 			path = View;
@@ -539,6 +550,7 @@
 				9F86180D2183E7A3005AE0C1 /* CatsViewModel.swift in Sources */,
 				9F8617E92183E02A005AE0C1 /* Protocols.swift in Sources */,
 				9FE0A37F2186447800456ED9 /* UIImageView+AlamofireImage.swift in Sources */,
+				9F6EB7E22187E17D00F067E1 /* AnimalDetailsViewController.swift in Sources */,
 				9F8618132183ED18005AE0C1 /* AnimalsCollectionViewCell.swift in Sources */,
 				9F8617E52183DD3E005AE0C1 /* ErrorManager.swift in Sources */,
 				9FE0A38621864DBF00456ED9 /* DogsViewController.swift in Sources */,
